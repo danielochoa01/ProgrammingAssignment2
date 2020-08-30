@@ -4,6 +4,7 @@
 ## Write a short comment describing this function
 
 ## This function caches the value of the inverse matrix
+## parameter x: a matrix
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
@@ -23,7 +24,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## This function computes the inverse of the special "matrix" created by 
 ## makeCacheMatrix function.
-
+## parameter x: the return vale from makeCacheMatrix function
+## parameter ...: additional parameters
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   inverse_matrix <- x$getinverse()
